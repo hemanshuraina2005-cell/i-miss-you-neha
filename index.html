@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You Neha 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #fff;
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .sub-text {
+            font-size: 1.8em;
+            color: #fff;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInOut 4s ease-in-out infinite;
+            margin-top: 30px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            font-size: 2em;
+            animation: heartFloat 6s infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes heartFloat {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        .heart1 { left: 10%; animation-delay: 0s; }
+        .heart2 { left: 20%; animation-delay: 1s; }
+        .heart3 { left: 30%; animation-delay: 2s; }
+        .heart4 { left: 40%; animation-delay: 0.5s; }
+        .heart5 { left: 50%; animation-delay: 1.5s; }
+        .heart6 { left: 60%; animation-delay: 2.5s; }
+        .heart7 { left: 70%; animation-delay: 0.8s; }
+        .heart8 { left: 80%; animation-delay: 1.8s; }
+        .heart9 { left: 90%; animation-delay: 2.2s; }
+
+        .message {
+            margin-top: 50px;
+            font-size: 1.3em;
+            color: rgba(255, 255, 255, 0.9);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .love-button {
+            margin-top: 40px;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .love-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="star" style="top: 10%; left: 15%;"></div>
+    <div class="star" style="top: 20%; left: 85%; animation-delay: 1s;"></div>
+    <div class="star" style="top: 50%; left: 25%; animation-delay: 0.5s;"></div>
+    <div class="star" style="top: 70%; left: 75%; animation-delay: 1.5s;"></div>
+    <div class="star" style="top: 30%; left: 50%; animation-delay: 2s;"></div>
+
+    <!-- Floating Hearts -->
+    <div class="heart heart1">💕</div>
+    <div class="heart heart2">💖</div>
+    <div class="heart heart3">💗</div>
+    <div class="heart heart4">💝</div>
+    <div class="heart heart5">💞</div>
+    <div class="heart heart6">💕</div>
+    <div class="heart heart7">💖</div>
+    <div class="heart heart8">💗</div>
+    <div class="heart heart9">💝</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>I Miss You Neha 💕</h1>
+        <p class="sub-text">Every moment without you feels incomplete...</p>
+        <p class="message">Missing you more with every passing second ✨</p>
+        <button class="love-button" onclick="showLove()">💌 Click for a surprise!</button>
+    </div>
+
+    <script>
+        function showLove() {
+            alert("You mean the world to me Neha! 💕 Can't wait to see you soon!");
+        }
+    </script>
+</body>
+</html>
